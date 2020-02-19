@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.bkmz.controller.ControllerMain">
+    <children>
+        <HBox spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            <children>
+                <VBox spacing="10.0">
+                    <children>
+                        <Button fx:id="addCourse" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#addCourse" text="добавить курс" VBox.vgrow="ALWAYS" />
+                        <Button fx:id="addInCourse" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#addInCourse" text="добавить в курсе учащихся" VBox.vgrow="ALWAYS" />
+                        <Button fx:id="addFart" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#deleteInCourse" text="добваить предмет" VBox.vgrow="ALWAYS" />
+                        <Button fx:id="deleteCourse" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#deleteCourse" text="удалить курс" VBox.vgrow="ALWAYS" />
+                        <Button fx:id="deleteInCourse" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#deleteInCourse" text="удалить в курсе учащихся" VBox.vgrow="ALWAYS" />
+                        <Button fx:id="deleteFart" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#deleteInCourse" text="удалить предмет" VBox.vgrow="ALWAYS" />
+                        <Button fx:id="edit" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#edit" text="изменить" VBox.vgrow="ALWAYS" />
+
+                    </children>
+                </VBox>
+                <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <HBox>
+                            <children>
+                                <TextField HBox.hgrow="ALWAYS" />
+                            </children>
+                        </HBox>
+                        <TabPane fx:id="tabCourse" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS" />
+                    </children>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>
